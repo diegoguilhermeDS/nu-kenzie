@@ -1,5 +1,5 @@
+import { Card } from "../Card"
 import "./styles.css"
-import trash from "../../assets/img/trash.png"
 
 export const List = ({listTransitions}) => {
     return (
@@ -14,34 +14,14 @@ export const List = ({listTransitions}) => {
             </nav>
             <ul className="list-card">
                 {listTransitions.length > 0 ? 
-                    listTransitions.map((elem, index) => {
-                        return (
-                            <li className="card" key={index}>
-                                <div className="container-description">
-                                    <h2>{elem.description}</h2>
-                                    <span>{elem.type}</span>
-                                </div>
-                                <p>{elem.value}</p>
-                                <button id={index}>
-                                    <img src={trash} alt="icon trash" />
-                                </button>
-                            </li>
-                        )
-                    }) :
+                    listTransitions.map((transaction, index) => <Card transaction={transaction} key={index}/>) : 
                     <div>
                         <h1>Você ainda não possui nenhum lançamento</h1>
-                        <li>
-                            <div></div>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                            <div></div>
-                        </li>
-                        <li>
-                            <div></div>
-                            <div></div>
-                        </li>
+                        <ul>
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                        </ul>
                     </div> 
                 } 
             </ul>
