@@ -22,7 +22,7 @@ export const List = ({listTransitions}) => {
                                     <span>{elem.type}</span>
                                 </div>
                                 <p>{elem.value}</p>
-                                <button>
+                                <button id={index}>
                                     <img src={trash} alt="icon trash" />
                                 </button>
                             </li>

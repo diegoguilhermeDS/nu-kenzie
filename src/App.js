@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TotalMoney listTransitions={listTransitions}/>
-        <Form/>
+        <TotalMoney listTransitions={listTransitions} />
+        <Form listTransitions={listTransitions} setListTransitions={setListTransitions}/>
         <List listTransitions={listTransitions}/>
         
       </header>
