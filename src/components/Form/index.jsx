@@ -6,7 +6,7 @@ export const Form = ({listTransitions, setListTransitions}) => {
 
     const [description, setDescription] = useState('')
     const [value, setValue] = useState(1)
-    const [type, setType] = useState('Entrada')
+    const [type, setType] = useState('Entradas')
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -14,10 +14,9 @@ export const Form = ({listTransitions, setListTransitions}) => {
         const transition = {description, type, value}
 
         setListTransitions([...listTransitions, transition])
-
         setDescription('')
         setValue(1)
-        setType('Entrada')
+        setType('Entradas')
     }
 
     return (
@@ -33,7 +32,7 @@ export const Form = ({listTransitions, setListTransitions}) => {
                 <div>
                     <label htmlFor="typeValue">Tipo de valor</label>
                     <select name="type" id="type" value={type} onChange={event => {setType(event.target.value)}}>
-                        <option value="Entrada" >Entrada</option>
+                        <option value="Entrada" >Entradas</option>
                         <option value="Despesas" >Despesas</option>
                     </select>
                 </div>

@@ -8,8 +8,8 @@ import {TotalMoney} from "./components/TotalMoney"
 function App() {
 
   const [listTransitions, setListTransitions] = useState([
-    { description: "Salário recebido", type: "entrada", value: 2500.5 },
-    { description: "Conta de luz", type: "saída", value: -150 }
+    { description: "Salário recebido", type: "Entradas", value: 2500.5 },
+    { description: "Conta de luz", type: "Despesas", value: -150 }
   ])
 
   return (
