@@ -5,7 +5,7 @@ export const Form = () => {
     return (
         <form>
             <span>Descrição</span>
-            <input type="text" placeholder="Digite aqui sua descrição"/>
+            <input type="text" name="description" placeholder="Digite aqui sua descrição"/>
             <small>Ex: Compra de roupas</small>
             <div>
                 <div>
@@ -14,9 +14,9 @@ export const Form = () => {
                 </div>
                 <div>
                     <label htmlFor="typeValue">Tipo de valor</label>
-                    <select name="type" id="typeValue">
+                    <select name="type" id="type">
                         <option value="0" >Entrada</option>
-                        <option value="1" >Saída</option>
+                        <option value="1" >Despesas</option>
                     </select>
                 </div>
             </div>
