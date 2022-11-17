@@ -18,7 +18,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <TotalMoney listTransitions={listTransitions} />
         <Form listTransitions={listTransitions} setListTransitions={setListTransitions}/>
-        <List listTransitions={listTransitions}/>
+        <List listTransitions={listTransitions} setListTransitions={setListTransitions}/>
       </header>
       <main>
       </main>
