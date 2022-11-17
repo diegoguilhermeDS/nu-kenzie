@@ -19,7 +19,6 @@ function App() {
         <TotalMoney listTransitions={listTransitions} />
         <Form listTransitions={listTransitions} setListTransitions={setListTransitions}/>
         <List listTransitions={listTransitions}/>
-        
       </header>
       <main>
       </main>
