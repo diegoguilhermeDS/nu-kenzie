@@ -2,7 +2,7 @@ import "./styles.css"
 import { Card } from "../Card"
 import { Button } from "../Button/Button"
 
-export const List = ({listTransitions}) => {
+export const List = ({listTransitions, setListTransitions}) => {
     return (
         <section>
             <nav>
@@ -15,7 +15,7 @@ export const List = ({listTransitions}) => {
             </nav>
             <ul className="list-card">
                 {listTransitions.length > 0 ? 
-                    listTransitions.map((transaction, index) => <Card transaction={transaction} key={index} index={index}/>) : 
+                    listTransitions.map((transaction, index) => <Card transaction={transaction} key={index} index={index} listTransitions={listTransitions} setListTransitions={setListTransitions}/>) : 
                     <div>
                         <h1>Você ainda não possui nenhum lançamento</h1>
                         <ul>
