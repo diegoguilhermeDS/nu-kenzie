@@ -1,5 +1,6 @@
 import "./styles.css"
 import { useState } from "react"
+import { Button } from "../Button/Button"
 
 export const Form = ({listTransitions, setListTransitions}) => {
 
@@ -37,7 +38,7 @@ export const Form = ({listTransitions, setListTransitions}) => {
                     </select>
                 </div>
             </div>
-            <button type="submit">Inserir valor</button>
+           <Button children={"Inserir valor"}/>
         </form>
     )
 }

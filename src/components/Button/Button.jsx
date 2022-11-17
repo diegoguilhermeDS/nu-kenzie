@@ -1,3 +1,13 @@
 import "./style.css"
 
-export const Button = ({children}) => <button className="btn-primary">{children}</button>
+export const Button = ({children, classAndColor='', handleBtn=''}) => {
+    if (handleBtn === '') {
+        return (
+            <button type="submit" className="btn-base btn-pink">{children}</button>
+        )
+    } else {
+        return (
+            <button type="submit" className={classAndColor} onClick={handleBtn}>{children}</button>
+        )
+    }
+}
