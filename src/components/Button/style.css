@@ -1,11 +1,32 @@
 .btn-base {
-    background-color: lightcyan;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8125rem 1.25rem;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.3s ease;
+}
+
+.btn-categorie {
+
 }
 
 .btn-pink {
-    background-color: pink;
+    background-color: var(--color-brand-100);
+    border: 2px solid var(--color-brand-100);
+    color: #ffffff;
+}
+.btn-pink:hover {
+    background-color: var(--color-brand-200);
+    border: 2px solid var(--color-brand-200);
 }
 
 .btn-grey {
     background-color: blueviolet;
 }
+
