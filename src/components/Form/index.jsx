@@ -1,6 +1,7 @@
 import "./styles.css"
 import { useState } from "react"
 import { Button } from "../Button/Button"
+import { Input } from "../Input"
 
 export const Form = ({listTransitions, setListTransitions}) => {
 
@@ -22,12 +23,12 @@ export const Form = ({listTransitions, setListTransitions}) => {
     return (
         <form onSubmit={handleSubmit}>
             <span>Descrição</span>
-            <input type="text" name="description" value={description} placeholder="Digite aqui sua descrição" required onChange={event => {setDescription(event.target.value)}}/>
+            <Input type={"Text"} description={description} setDescription={setDescription}/>
             <small>Ex: Compra de roupas</small>
             <div>
                 <div>
                     <label htmlFor="value">Valor</label>
-                    <input type="number" id="value" value={value} required onChange={event => {setValue(Number(event.target.value))}}/>
+                    <Input value={value} setValue={setValue}/>
                 </div>
                 <div>
                     <label htmlFor="typeValue">Tipo de valor</label>
