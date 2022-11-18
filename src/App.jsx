@@ -11,7 +11,7 @@ function App() {
     { description: "Salário recebido", type: "Entradas", value: 2500.5 },
     { description: "Conta de luz", type: "Despesas", value: -150 }
   ])
-
+  
   return (
     <div className="App">
       <header className="App-header">

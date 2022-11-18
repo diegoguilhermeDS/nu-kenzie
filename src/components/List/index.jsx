@@ -1,36 +1,33 @@
 import "./styles.css"
 import { Card } from "../Card"
 import { Button } from "../Button/Button"
+import { useState } from "react"
 
 export const List = ({listTransitions, setListTransitions}) => {
 
-    const handleCategory = (event) => {
-        const btnCurrency = event.target
-        btnCurrency.classList.add("btn-pink")
-        btnCurrency.classList.remove("btn-grey")
+    const [listFilter, setListFilter] = useState(listTransitions)
+    const [btnSelect, setBtnSelect] = useState("Todos")
 
-        const listBtn = Array.from(document.querySelector(".list-btn-categories").children)
-        
-        listBtn.forEach((element) => {
-            if (element.children[0] !== btnCurrency) {
-                element.children[0].classList.remove("btn-pink")
-                element.children[0].classList.add("btn-grey")
-            }
-        })
+    const renderTransitions = (list) => {
+        return (
+            list.map((transaction, index) => <Card transaction={transaction} key={index} index={index} listTransitions={listTransitions} setListTransitions={setListTransitions}/>)
+        )
+    }
 
-        if (btnCurrency.innerText === "Todos") {
-            console.log(btnCurrency.innerText)
 
-        } else if (btnCurrency.innerText === "Entradas") {
+    const handleCategory = (value) => {
+        setBtnSelect(value)
+    
+        if (value === "Todos") {
+            setListFilter(listTransitions)
+            
+        } else if (value === "Entradas") {
             const listFilteredByEntry = listTransitions.filter((trans) => trans.type === "Entradas")
-            console.log(listFilteredByEntry)
-            console.log(btnCurrency.innerText)
+            setListFilter(listFilteredByEntry)
 
-        } else if (btnCurrency.innerText === "Despesas") {
+        } else if (value === "Despesas") {
             const listFilteredByExpenses = listTransitions.filter((trans) => trans.type === "Despesas")
-            console.log(listFilteredByExpenses)
-            console.log(btnCurrency.innerText)
-
+            setListFilter(listFilteredByExpenses)
         }
     }
 
@@ -41,14 +38,14 @@ export const List = ({listTransitions, setListTransitions}) => {
             <nav>
                 <h3>Resumo financeiro</h3>
                 <ul className="list-btn-categories">
-                    <li><Button children={"Todos"} classAndColor={"btn-base btn-pink"} handleBtn={handleCategory}/></li>
-                    <li><Button children={"Entradas"} classAndColor={"btn-base btn-grey"} handleBtn={handleCategory}/></li>
-                    <li><Button children={"Despesas"} classAndColor={"btn-base btn-grey"} handleBtn={handleCategory}/></li>
+                    <li><Button children={"Todos"} classAndColor={btnSelect === "Todos" ? "btn-pink" : "btn-grey"} handleBtn={() => handleCategory("Todos")}/></li>
+                    <li><Button children={"Entradas"} classAndColor={btnSelect === "Entradas" ? "btn-pink" : "btn-grey"} handleBtn={() => handleCategory("Entradas")}/></li>
+                    <li><Button children={"Despesas"} classAndColor={btnSelect === "Despesas" ? "btn-pink" : "btn-grey"} handleBtn={() => handleCategory("Despesas")}/></li>
                 </ul>
             </nav>
             <ul className="list-card">
                 {listTransitions.length > 0 ? 
-                    listTransitions.map((transaction, index) => <Card transaction={transaction} key={index} index={index} listTransitions={listTransitions} setListTransitions={setListTransitions}/>) : 
+                    renderTransitions(listFilter): 
                     <div>
                         <h1>Você ainda não possui nenhum lançamento</h1>
                         <ul>

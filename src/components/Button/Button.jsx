@@ -7,7 +7,7 @@ export const Button = ({children, classAndColor='', handleBtn=''}) => {
         )
     } else {
         return (
-            <button type="submit" className={classAndColor} onClick={handleBtn}>{children}</button>
+            <button type="submit" className={`btn-base ${classAndColor}`} onClick={handleBtn}>{children}</button>
         )
     }
 }
