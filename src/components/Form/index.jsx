@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Button } from "../Button/Button"
 import { Input } from "../Input"
 
-export const Form = ({listTransitions, setListTransitions}) => {
+export const Form = ({listTransitions, setListTransitions, listFilter, setListFilter}) => {
 
     const [description, setDescription] = useState('')
     const [value, setValue] = useState(1)
@@ -15,6 +15,7 @@ export const Form = ({listTransitions, setListTransitions}) => {
         const transition = {description, type, value}
 
         setListTransitions([...listTransitions, transition])
+        setListFilter([...listFilter, transition])
         setDescription('')
         setValue(1)
         setType('Entradas')
