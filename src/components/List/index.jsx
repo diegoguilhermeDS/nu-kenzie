@@ -3,14 +3,13 @@ import { Card } from "../Card"
 import { Button } from "../Button/Button"
 import { useState } from "react"
 
-export const List = ({listTransitions, setListTransitions}) => {
+export const List = ({listTransitions, setListTransitions, listFilter, setListFilter}) => {
 
-    const [listFilter, setListFilter] = useState(listTransitions)
     const [btnSelect, setBtnSelect] = useState("Todos")
 
     const renderTransitions = (list) => {
         return (
-            list.map((transaction, index) => <Card transaction={transaction} key={index} index={index} listTransitions={listTransitions} setListTransitions={setListTransitions}/>)
+            list.map((transaction, index) => <Card transaction={transaction} key={index} index={index} listFilter={listFilter} setListFilter={setListFilter} listTransitions={listTransitions} setListTransitions={setListTransitions}/>)
         )
     }
 
@@ -44,7 +43,7 @@ export const List = ({listTransitions, setListTransitions}) => {
                 </ul>
             </nav>
             <ul className="list-card">
-                {listTransitions.length > 0 ? 
+                {listFilter.length > 0 ? 
                     renderTransitions(listFilter): 
                     <div>
                         <h1>Você ainda não possui nenhum lançamento</h1>

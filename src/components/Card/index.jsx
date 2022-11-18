@@ -2,10 +2,13 @@ import "./styles.css"
 import trash from "../../assets/img/trash.png"
 import nullCard from "../../assets/img/NoCard.svg"
 
-export const Card = ({transaction='', index, listTransitions, setListTransitions}) => {
+export const Card = ({transaction='', index, listFilter, setListFilter, listTransitions, setListTransitions}) => {
     
     const hadleRemove = (event) => {
         const idCardRemove = event.target.id
+        setListFilter(listFilter.filter((trans, ind) => {
+            return ind !== Number(idCardRemove)
+        }))
         setListTransitions(listTransitions.filter((trans, ind) => {
             return ind !== Number(idCardRemove)
         }))
