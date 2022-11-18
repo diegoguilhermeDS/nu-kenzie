@@ -1,13 +1,13 @@
-import ilustration from './assets/img/illustration.svg';
-import logo from './assets/img/NuKenzie.svg';
+import ilustration from "./assets/img/illustration.svg";
+import logo from "./assets/img/NuKenzie.svg";
 import { useState } from 'react';
-import { Form } from './components/Form';
-import { List } from './components/List';
-import { TotalMoney } from "./components/TotalMoney"
-import { Header } from "./components/Header"
-import { Button } from "../src/components/Button/Button"
+import { Form } from "./components/Form";
+import { List } from "./components/List";
+import { TotalMoney } from "./components/TotalMoney";
+import { Header } from "./components/Header";
+import { Button } from "../src/components/Button/Button";
 
-import './App.css';
+import "./App.css";
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
   ])
 
   const [listFilter, setListFilter] = useState(listTransitions)
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   
   return (
     <div className="App">
@@ -33,16 +33,16 @@ function App() {
           </main>
         </div>
         :
-        <main className="App-header">
-          <section>
+        <main className="container container-home-page">
+          <section className="section-interaction">
             <img src={logo} alt="imagem da logo" />
-            <div>
+            <div className="container-interaction">
               <h1>Centralize o controle das suas finanças</h1>
-              <span>de forma rápida e segura</span>
+              <span className="text-1">de forma rápida e segura</span>
               <Button children={"Iniciar"} classAndColor={"btn-pink"} handleBtn={() => setIsLoggedIn(true)}/>
             </div>
           </section>
-          <section>
+          <section className="section-ilustration">
             <img src={ilustration} alt="imagem ilustrativa" />
           </section>
         </main>
