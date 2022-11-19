@@ -1,6 +1,6 @@
 # Projeto Nu Kenzie
 
-<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Mea%20Petz.png"></div>
+<div align="center"><img width="1000" src=""></div>
 
 # :pencil: Descrição
 
@@ -14,15 +14,15 @@ Ainda, foram empregados conhecimentos de HTML, CSS, Javascript.
 
 ##  💶 Moblie
  
-<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/banner-moblie.png"></div>
+<div align="center"><img width="1000" src=""></div>
 
 ##  💶 Home page
 
-<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Home%20page.png"></div>
+<div align="center"><img width="1000" src=""></div>
 
 ## 💶 Dashboard
 
-<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-em-equipe-MeaPetz/blob/develop/src/assets/img/readme/Dashboard%20page.png"></div>
+<div align="center"><img width="1000" src=""></div>
 
 # 💻 Desenvoldores:
 💶 Diego Guilherme
