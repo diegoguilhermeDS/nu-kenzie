@@ -25,7 +25,7 @@ Ainda, foram empregados conhecimentos de HTML, CSS, Javascript.
 <div align="center"><img width="1000" src=""></div>
 
 # 💻 Desenvoldores:
-💶 Diego Guilherme
+💻 Diego Guilherme
 * [GitHub](https://github.com/diegoguilhermeDS)
 * [LinkedIn](https://www.linkedin.com/in/diego-guilherme-616410200)
 
