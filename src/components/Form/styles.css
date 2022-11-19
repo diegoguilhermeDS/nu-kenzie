@@ -1,0 +1,32 @@
+.form-transitions {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    border: 2px solid var(--color-grey-300);
+    border-radius: var(--radius-1);
+    padding: 2.375rem 1.5rem;
+}
+
+.container-data-transitions {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.container-value {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.container-type {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media (min-width: 700px) {
+    .form-transitions {
+        width: 22.625rem;
+    }
+}

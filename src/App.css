@@ -1,6 +1,6 @@
 @import "./index.css";
 
-body {
+.App-container-home-page {
   background-color: #282c34;
   color: white;
 }

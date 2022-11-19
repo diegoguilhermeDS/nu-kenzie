@@ -1,5 +1,5 @@
 import "./styles.css"
-import trash from "../../assets/img/trash.png"
+import { IconTrash } from "../ButtonTrash"
 import nullCard from "../../assets/img/NoCard.svg"
 
 export const Card = ({transaction='', index, listFilter, setListFilter, listTransitions, setListTransitions}) => {
@@ -14,17 +14,16 @@ export const Card = ({transaction='', index, listFilter, setListFilter, listTran
         }))
     }   
 
-
     if (transaction !== '') {
         return (
-            <li className="card" id={index}>
+            <li className={transaction.type === "Entradas" ? "card card-entry" : "card"} id={index}>
                 <div className="container-description">
-                    <h2>{transaction.description}</h2>
-                    <span>{transaction.type}</span>
+                    <h2 className="title-4">{transaction.description}</h2>
+                    <span className="text-3">{transaction.type}</span>
                 </div>
-                <p>{transaction.value}</p>
-                <button id={index} onClick={hadleRemove}>
-                    <img src={trash} alt="icon trash" id={index}/>
+                <span className="text-3">R$ {transaction.value.toFixed(2).replace('.',',')}</span>
+                <button id={index} onClick={hadleRemove} className="btn-trash">
+                    <IconTrash/>
                 </button>
             </li>
         )

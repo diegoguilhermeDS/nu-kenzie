@@ -1,0 +1,31 @@
+.card {
+    background-color: var(--color-grey-400);
+    border-radius: var(--radius-2);
+    padding: 1.125rem 1.125rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 400px;
+}
+.card:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 20px -8px rgba(0, 0, 0, 0.25);
+}
+
+.container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.card > span {
+    width: 100px;
+    margin-top: .25rem;
+}
+
+@media (min-width: 700px) {
+    .card {
+        width: 100%;
+    }
+}

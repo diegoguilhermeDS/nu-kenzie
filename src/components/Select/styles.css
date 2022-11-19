@@ -1,0 +1,22 @@
+.select-type {
+    background-color: var(--color-grey-400);
+    border: 2px solid var(--color-grey-400);
+    border-radius: var(--radius-1);
+    outline: none;
+    padding: .8438rem 1rem;
+    width: 8rem;
+    cursor: pointer;
+    color: var(--color-grey-100);
+}
+
+.select-null {
+    color: var(--color-grey-200);
+}
+
+.select-type > option:nth-child(1) {
+    color: var(--color-grey-300);
+}
+
+.select-type:focus {
+    outline: 2px solid var(--color-grey-100);
+}
