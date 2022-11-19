@@ -16,7 +16,7 @@ export const Card = ({transaction="", index, listFilter, setListFilter, listTran
 
     if (transaction !== "") {
         return (
-            <li className={transaction.type === "Entradas" ? "card card-entry" : "card"} id={index}>
+            <li className={transaction.type === "Entradas" ? "card card-entry" : "card card-exit"} id={index}>
                 <div className="container-description">
                     <h2 className="title-4">{transaction.description}</h2>
                     <span className="text-3">{transaction.type}</span>
