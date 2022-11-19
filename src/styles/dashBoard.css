@@ -1,0 +1,18 @@
+.container-dash-board {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-1);
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+}
+
+@media (min-width: 700px) {
+    .container-dash-board {
+        flex-direction: row;
+        gap: 3.75rem;
+    }
+}

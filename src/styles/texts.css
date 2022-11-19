@@ -13,6 +13,11 @@
     font-weight: 700;
 }
 
+.title-4 {
+    font-size: var(--font-size-4);
+    font-weight: 700; 
+}
+
 .text-1 {
     font-size: var(--font-size-4);
     font-weight: 400;

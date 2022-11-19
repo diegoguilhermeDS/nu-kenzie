@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 
 @import "./styles/texts.css";
+@import "./styles/colorTexts.css";
 @import "./styles/homePage.css";
+@import "./styles/dashBoard.css";
 
 * {
   margin: 0;
@@ -10,6 +12,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  color: var(--color-grey-100);
 }
 
 :root {
@@ -40,4 +43,10 @@
 .container {
   max-width: 21.5625rem;
   margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 1000px;
+  }
 }

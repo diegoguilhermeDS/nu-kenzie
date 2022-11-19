@@ -1,0 +1,20 @@
+.section-value-total {
+    border: 2px solid var(--color-grey-300);
+    border-radius: var(--radius-1);
+    padding: 1.25rem .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-infor-value-total {
+    display: flex;
+    flex-direction: column;
+    gap: .375rem;
+    width: 8.75rem;
+}
+
+@media (min-width: 700px) {
+    .section-value-total {
+        width: 22.625rem;
+    }
+}
