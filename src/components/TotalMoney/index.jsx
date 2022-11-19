@@ -13,7 +13,7 @@ export const TotalMoney = ({listTransitions}) => {
                     <h3 className="title-4">Valor total:</h3>
                     <span className="text-3">O valor se refere ao saldo</span>
                 </div>
-                <h3 className="title-4 brand-1">R$ {valueTotal.toFixed(2).replace('.', ',')}</h3>
+                <h3 className="title-4 brand-1">R$ {valueTotal.toFixed(2).replace(".", ",")}</h3>
             </section>
         )
     }

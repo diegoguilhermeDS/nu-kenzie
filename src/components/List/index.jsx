@@ -45,7 +45,7 @@ export const List = ({listTransitions, setListTransitions, listFilter, setListFi
             <ul className="list-card">
                 {listFilter.length > 0 ? 
                     renderTransitions(listFilter): 
-                    <div>
+                    <div className="container-list-no-transition">
                         <h1 className="title-3">Você ainda não possui nenhum lançamento</h1>
                         <Card key={1}/>
                         <Card key={2}/>
