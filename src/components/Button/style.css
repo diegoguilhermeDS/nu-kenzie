@@ -1,0 +1,55 @@
+.btn-base {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8125rem 1.25rem;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.3s ease;
+}
+
+.btn-categorie {
+    height: 2.5rem;
+}
+
+.btn-pink {
+    background-color: var(--color-brand-100);
+    border: 2px solid var(--color-brand-100);
+    color: #ffffff;
+}
+.btn-pink:hover {
+    background-color: var(--color-brand-200);
+    border: 2px solid var(--color-brand-200);
+}
+
+.btn-grey {
+    background-color: var(--color-grey-300);
+    border: 2px solid var(--color-grey-300);
+    color: var(--color-grey-200);
+}
+.btn-grey:hover {
+    background-color: var(--color-grey-100);
+    border: 2px solid var(--color-grey-100);
+    color: var(--color-grey-400);
+}
+
+.btn-trash {
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: var(--radius-3);
+    border: none;
+    background-color: var(--color-grey-300);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-trash:hover {
+    background-color: var(--color-grey-100);
+}
+.btn-trash:hover > svg > path{
+    fill: var(--color-grey-400);
+}
