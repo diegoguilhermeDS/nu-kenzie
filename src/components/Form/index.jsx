@@ -6,9 +6,9 @@ import { Select } from "../Select"
 
 export const Form = ({listTransitions, setListTransitions, listFilter, setListFilter}) => {
 
-    const [description, setDescription] = useState('')
-    const [value, setValue] = useState('')
-    const [type, setType] = useState('Tipo')
+    const [description, setDescription] = useState("")
+    const [value, setValue] = useState("")
+    const [type, setType] = useState("Tipo")
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -17,9 +17,9 @@ export const Form = ({listTransitions, setListTransitions, listFilter, setListFi
 
         setListTransitions([...listTransitions, transition])
         setListFilter([...listFilter, transition])
-        setDescription('')
-        setValue('')
-        setType('Tipo')
+        setDescription("")
+        setValue("")
+        setType("Tipo")
     }
 
     return (
@@ -34,10 +34,6 @@ export const Form = ({listTransitions, setListTransitions, listFilter, setListFi
                 </div>
                 <div className="container-type">
                     <label htmlFor="typeValue" className="text-3">Tipo de valor</label>
-                    {/* <select name="type" id="type" value={type} onChange={event => {setType(event.target.value)}}>
-                        <option value="Entrada" >Entradas</option>
-                        <option value="Despesas" >Despesas</option>
-                    </select> */}
                     <Select type={type} setType={setType}/>
                 </div>
             </div>

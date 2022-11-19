@@ -4,28 +4,40 @@
     padding: 1.125rem 1.125rem;
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    width: 400px;
+    height: 6.25rem;
+    width: 25rem;
 }
 .card:hover {
     background-color: #fff;
     box-shadow: 2px 2px 20px -8px rgba(0, 0, 0, 0.25);
 }
 
+.card-entry {
+    border-left: 4px solid var(--color-brand-300);
+}
+
 .container-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 160px;
+    width: 10rem;
 }
 
 .card > span {
-    width: 100px;
+    width: 6.25rem;
     margin-top: .25rem;
+}
+
+.card-no-transition > img {
+    width: 21.5625rem;
 }
 
 @media (min-width: 700px) {
     .card {
+        width: 100%;
+    }
+
+    .card-no-transition > img {
         width: 100%;
     }
 }

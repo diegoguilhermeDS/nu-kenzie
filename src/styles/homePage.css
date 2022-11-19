@@ -31,8 +31,8 @@
 
   .container-interaction > h1 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 2.375rem;
+    line-height: 3rem;
   }
 
   .section-ilustration > img {
@@ -41,7 +41,7 @@
   }
   
   
-  @media (min-width: 700px) {
+  @media (min-width: 43.75rem) {
     .container-home-page {
         flex-direction: row;
         gap: 3rem;
@@ -49,7 +49,7 @@
 
     .section-interaction {
         align-items: flex-start;
-        margin-right: 130px;
+        margin-right: 8.125rem;
 
     }
     
@@ -67,6 +67,6 @@
     }
 
     .section-ilustration > img {
-        width: 600px;
+        width: 37.5rem;
     }
   }
