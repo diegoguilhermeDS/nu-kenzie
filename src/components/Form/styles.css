@@ -25,7 +25,7 @@
     gap: .5rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1030px) {
     .form-transitions {
         width: 22.625rem;
     }

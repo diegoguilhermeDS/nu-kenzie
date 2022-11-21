@@ -18,7 +18,7 @@ function App() {
 
   const [listFilter, setListFilter] = useState(listTransitions)
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  
+
   return (
     <div className="App">
       {isLoggedIn ? 
