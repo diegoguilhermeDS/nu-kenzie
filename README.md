@@ -1,6 +1,6 @@
 # Projeto Nu Kenzie
 
-<div align="center"><img width="1000" src=""></div>
+<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie-diegoguilherme-ds/blob/master/src/assets/readme/Index.jpg"></div>
 
 # :pencil: Descrição
 
@@ -14,15 +14,16 @@ Ainda, foram empregados conhecimentos de HTML, CSS, Javascript.
 
 ##  💶 Moblie
  
-<div align="center"><img width="1000" src=""></div>
+<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie-diegoguilherme-ds/blob/master/src/assets/readme/Nu-Kenzie-moblie.png"></div>
 
 ##  💶 Home page
 
-<div align="center"><img width="1000" src=""></div>
+<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie-diegoguilherme-ds/blob/master/src/assets/readme/Index.jpg"></div>
 
 ## 💶 Dashboard
 
-<div align="center"><img width="1000" src=""></div>
+<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie-diegoguilherme-ds/blob/master/src/assets/readme/Home-No-Card.jpg"></div>
+<div align="center"><img width="1000" src="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie-diegoguilherme-ds/blob/master/src/assets/readme/Home.jpg"></div>
 
 # 💻 Desenvoldores:
 💻 Diego Guilherme
