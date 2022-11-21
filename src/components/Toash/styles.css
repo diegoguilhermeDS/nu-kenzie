@@ -1,0 +1,44 @@
+.modal {
+    position: absolute;
+    top: 100px;
+    max-width: 400px;
+    padding: 1rem 2rem;
+    background-color: var(--color-grey-400);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: animationModal 4s ease-in-out;
+}
+
+.circle-info {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 50%;
+    background-color: var(--color-brand-100);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+@keyframes animationModal {
+    0% {
+        top: -10%;
+        opacity: 0;
+    }
+    35% {
+        top: 80px;
+        opacity: 1;
+    }
+    50% {
+        top: 80px;
+        opacity: 1;
+    }
+    100% {
+        top: -10%;
+        opacity: 0;
+    }
+}

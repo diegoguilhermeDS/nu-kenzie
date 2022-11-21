@@ -3,23 +3,32 @@ import { useState } from "react"
 import { Button } from "../Button/Button"
 import { Input } from "../Input"
 import { Select } from "../Select"
+import { ToashForm } from "../Toash"
 
 export const Form = ({listTransitions, setListTransitions, listFilter, setListFilter}) => {
 
     const [description, setDescription] = useState("")
-    const [value, setValue] = useState("")
+    const [value, setValue] = useState()
     const [type, setType] = useState("Tipo")
+    const [goToash, setGoToash] = useState(false)
 
     const handleSubmit = (event) => {
         event.preventDefault()
         
-        const transition = {description, type, value}
-
-        setListTransitions([...listTransitions, transition])
-        setListFilter([...listFilter, transition])
-        setDescription("")
-        setValue("")
-        setType("Tipo")
+        if (type !== "Tipo") {
+            const transition = {description, type, value}
+    
+            setListTransitions([...listTransitions, transition])
+            setListFilter([...listFilter, transition])
+            setDescription("")
+            setValue("")
+            setType("Tipo")
+        } else {
+            setGoToash(true)
+            setTimeout(() => {
+                setGoToash(false)
+            }, 3000)
+        }
     }
 
     return (
@@ -38,6 +47,7 @@ export const Form = ({listTransitions, setListTransitions, listFilter, setListFi
                 </div>
             </div>
            <Button children={"Inserir valor"}/>
+           {goToash ? <ToashForm/>  : ''}
         </form>
     )
 }

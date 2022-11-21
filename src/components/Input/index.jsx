@@ -7,7 +7,7 @@ export const Input = ({type, description="", setDescription="", setValue="", val
         )
     } else {
         return (
-            <input type="number" id="value" value={value} required onChange={event => {setValue(Number(event.target.value))}} className="input-value" placeholder="1 R$"/>
+            <input type="number" id="value" value={value} required onChange={event => setValue(Number(event.target.value))} className="input-value" placeholder="1 R$"/>
         )
     }
 }

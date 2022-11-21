@@ -11,6 +11,10 @@
 }
 
 @media (min-width: 700px) {
+    
+}
+
+@media (min-width: 1030px) {
     .container-dash-board {
         flex-direction: row;
         gap: 3.75rem;

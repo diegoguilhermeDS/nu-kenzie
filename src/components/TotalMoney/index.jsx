@@ -4,7 +4,18 @@ export const TotalMoney = ({listTransitions}) => {
 
     if (listTransitions.length > 0) {
         const valueTotal = listTransitions.reduce((oldValue, currencyValue) => {
-            return oldValue + currencyValue.value
+            let value = 0
+            if (currencyValue.type === "Despesas") {
+                if (currencyValue.value > 0) {
+                    value = currencyValue.value * -1
+                } else {
+                    value = currencyValue.value
+                }
+            } else {
+                value = currencyValue.value
+            }
+            
+            return oldValue + value
         }, 0)
     
         return (
