@@ -40,8 +40,22 @@
     object-fit: cover;
   }
   
+@media (min-width: 700px) {
+  .section-interaction > img {
+    width: 350px;
+  }
+
+  .container-interaction > h1, span {
+    width: 350px;
+  }
+
+  .section-ilustration > img {
+    width: 400px;
+  }
+}
+
   
-  @media (min-width: 43.75rem) {
+  @media (min-width: 1030px) {
     .container-home-page {
         flex-direction: row;
         gap: 3rem;

@@ -13,7 +13,7 @@
     width: 8.75rem;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1030px) {
     .section-value-total {
         width: 22.625rem;
     }

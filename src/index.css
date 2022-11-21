@@ -47,6 +47,13 @@
 
 @media (min-width: 700px) {
   .container {
+    max-width: 700px;
+  }
+}
+
+
+@media (min-width: 1030px) {
+  .container {
     max-width: 62.5rem;
   }
 }
